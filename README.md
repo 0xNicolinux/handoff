@@ -150,7 +150,7 @@ skills/handoff/
     ├── repo-state.mjs               branch, HEAD, dirty files, unpushed commits, secrets
     └── check-handoff.mjs            the handoff linter (--minimal for the short version)
 hooks/session-start.mjs              "Handoff waiting" notice when a session starts
-tests/run.mjs                        54 regression probes (node tests/run.mjs)
+tests/run.mjs                        57 regression probes (node tests/run.mjs)
 ```
 
 ## FAQ
@@ -174,7 +174,7 @@ It started as a private skill for a setup that breaks sessions constantly: two m
 - **"Write the handoff with the file tool, not a shell heredoc"**: twenty kilobytes of markdown with quotes and backslashes broke the heredoc twice.
 - **"Announce before the first tool call"**: in testing, the agent kept skipping the one line the user needs to hear, until the instruction moved into the skill's description.
 
-In my own side-by-side test on two shutdown scenarios, the same model with the original version of the skill met all 69 rubric checks; without it, 55. I didn't keep that harness, so read it as an anecdote, not a benchmark. Before this release, the public version was run end to end in throwaway repos, twice, and its scripts pass the 54 regression probes in [`tests/`](tests/run.mjs), each one built from a bug those runs found.
+In my own side-by-side test on two shutdown scenarios, the same model with the original version of the skill met all 69 rubric checks; without it, 55. I didn't keep that harness, so read it as an anecdote, not a benchmark. Before this release, the public version was run end to end in throwaway repos, twice, and its scripts pass the 57 regression probes in [`tests/`](tests/run.mjs), each one built from a bug those runs found.
 
 ## Contributing
 

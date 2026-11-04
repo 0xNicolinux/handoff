@@ -154,7 +154,7 @@ skills/handoff/
     ├── repo-state.mjs               rama, HEAD, archivos modificados, commits sin push, secretos
     └── check-handoff.mjs            el verificador del handoff (--minimal para la versión corta)
 hooks/session-start.mjs              aviso «Handoff waiting» al iniciar sesión
-tests/run.mjs                        54 pruebas de regresión (node tests/run.mjs)
+tests/run.mjs                        57 pruebas de regresión (node tests/run.mjs)
 ```
 
 ## Preguntas frecuentes
@@ -178,7 +178,7 @@ Empezó como un skill privado para un entorno que corta sesiones todo el tiempo:
 - **«Escribe el handoff con la herramienta de archivos, no con un heredoc»**: veinte kilobytes de markdown con comillas y barras invertidas rompieron el heredoc dos veces.
 - **«Avisa antes de usar la primera herramienta»**: en las pruebas, el agente se saltaba la única línea que el usuario necesita oír, hasta que la instrucción pasó a la descripción del skill.
 
-En mi propia prueba lado a lado con dos escenarios de cierre, el mismo modelo con la versión original del skill cumplió los 69 puntos de la rúbrica; sin el skill, 55. No guardé ese arnés de pruebas, así que tómalo como una anécdota, no como un benchmark. Antes de publicarla, la versión pública se corrió de punta a punta en repos desechables, dos veces, y sus scripts pasan las 54 pruebas de regresión de [`tests/`](tests/run.mjs), cada una construida con un bug que esas corridas encontraron.
+En mi propia prueba lado a lado con dos escenarios de cierre, el mismo modelo con la versión original del skill cumplió los 69 puntos de la rúbrica; sin el skill, 55. No guardé ese arnés de pruebas, así que tómalo como una anécdota, no como un benchmark. Antes de publicarla, la versión pública se corrió de punta a punta en repos desechables, dos veces, y sus scripts pasan las 57 pruebas de regresión de [`tests/`](tests/run.mjs), cada una construida con un bug que esas corridas encontraron.
 
 ## Contribuir
 

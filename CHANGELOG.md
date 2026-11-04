@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 (2026-11-04)
+
+- Start-of-session notice hardened against prompt injection from cloned repos: it ignores a HANDOFF.md that
+  is tracked by git (the skill never commits one), passes only a known status word to the model, cleans and
+  caps the title shown to you, and labels the file as data, not instructions.
+- Resuming: the skill treats the handoff as a plan from an earlier session; anything in it that asks to push,
+  deploy or send data needs your OK in the current session.
+- 3 new regression probes for the above (57 in total).
+
 ## 1.0.0 (2026-11-04)
 
 First public release.
@@ -15,5 +24,5 @@ First public release.
   at a usage limit.
 - Claude Code plugin with a SessionStart hook that announces a waiting handoff (`HANDOFF_NOTICE=off` to
   silence it, `HANDOFF_PATH` to point it elsewhere).
-- `tests/run.mjs`: 54 regression probes (`node tests/run.mjs`).
+- `tests/run.mjs`: regression probes (`node tests/run.mjs`).
 - English and Spanish READMEs.
