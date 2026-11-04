@@ -15,5 +15,5 @@ First public release.
   at a usage limit.
 - Claude Code plugin with a SessionStart hook that announces a waiting handoff (`HANDOFF_NOTICE=off` to
   silence it, `HANDOFF_PATH` to point it elsewhere).
-- `tests/run.mjs`: 54 regression probes, run in CI on Linux, macOS and Windows.
+- `tests/run.mjs`: 54 regression probes (`node tests/run.mjs`).
 - English and Spanish READMEs.

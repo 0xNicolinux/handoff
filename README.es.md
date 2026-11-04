@@ -3,7 +3,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/asalazarvaldiviaocg/handoff/actions/workflows/test.yml"><img alt="Pruebas" src="https://github.com/asalazarvaldiviaocg/handoff/actions/workflows/test.yml/badge.svg"></a>
   <a href="#instalación"><img alt="Plugin de Claude Code" src="https://img.shields.io/badge/Claude_Code-plugin-138840?style=flat-square"></a>
   <a href="skills/handoff/SKILL.md"><img alt="Agent Skills: SKILL.md" src="https://img.shields.io/badge/Agent_Skills-SKILL.md-0b100c?style=flat-square"></a>
   <img alt="Cero dependencias" src="https://img.shields.io/badge/dependencias-0-138840?style=flat-square">
@@ -179,7 +178,7 @@ Empezó como un skill privado para un entorno que corta sesiones todo el tiempo:
 - **«Escribe el handoff con la herramienta de archivos, no con un heredoc»**: veinte kilobytes de markdown con comillas y barras invertidas rompieron el heredoc dos veces.
 - **«Avisa antes de usar la primera herramienta»**: en las pruebas, el agente se saltaba la única línea que el usuario necesita oír, hasta que la instrucción pasó a la descripción del skill.
 
-En mi propia prueba lado a lado con dos escenarios de cierre, el mismo modelo con la versión original del skill cumplió los 69 puntos de la rúbrica; sin el skill, 55. No guardé ese arnés de pruebas, así que tómalo como una anécdota, no como un benchmark. Antes de publicarla, la versión pública se corrió de punta a punta en repos desechables, dos veces, y sus scripts pasan las 54 pruebas de regresión de [`tests/`](tests/run.mjs), cada una construida con un bug que esas corridas encontraron. CI las corre en Linux, macOS y Windows.
+En mi propia prueba lado a lado con dos escenarios de cierre, el mismo modelo con la versión original del skill cumplió los 69 puntos de la rúbrica; sin el skill, 55. No guardé ese arnés de pruebas, así que tómalo como una anécdota, no como un benchmark. Antes de publicarla, la versión pública se corrió de punta a punta en repos desechables, dos veces, y sus scripts pasan las 54 pruebas de regresión de [`tests/`](tests/run.mjs), cada una construida con un bug que esas corridas encontraron.
 
 ## Contribuir
 
