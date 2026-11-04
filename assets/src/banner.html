@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>handoff banner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=block" rel="stylesheet">
+<style>
+  /* Rendered to PNG by render.mjs (same folder). Palette: one signal green (seed hue 150) on a green-tinted near-black. */
+  :root {
+    --bg: oklch(0.165 0.012 150);
+    --surface: oklch(0.205 0.014 150);
+    --line: oklch(0.30 0.016 150);
+    --ink: oklch(0.955 0.008 150);
+    --muted: oklch(0.74 0.014 150);
+    --dim: oklch(0.56 0.014 150);
+    --signal: oklch(0.82 0.17 150);
+    --signal-tint: oklch(0.82 0.17 150 / 0.10);
+    --w: 1280px; --h: 540px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: transparent; }
+  .card {
+    width: var(--w); height: var(--h); border-radius: 28px; background: var(--bg);
+    position: relative; overflow: hidden; color: var(--ink);
+    font-family: "Geist", system-ui, sans-serif;
+    display: grid; grid-template-columns: 1fr 500px; gap: 56px; padding: 54px 72px 0 72px;
+  }
+  .mark { font-family: "Geist Mono", monospace; font-weight: 600; font-size: 26px; letter-spacing: -0.01em; }
+  .mark b { color: var(--signal); font-weight: 600; }
+  h1 { margin-top: 28px; font-weight: 600; font-size: 68px; line-height: 1.02; letter-spacing: -0.035em; text-wrap: balance; }
+  .sub { margin-top: 20px; font-size: 21px; line-height: 1.45; color: var(--muted); max-width: 33ch; text-wrap: pretty; }
+  .install {
+    margin-top: 24px; display: inline-grid; grid-template-columns: auto auto; column-gap: 12px; row-gap: 6px;
+    font-family: "Geist Mono", monospace; font-size: 15px; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 10px; padding: 11px 16px; background: var(--surface);
+  }
+  .install span { color: var(--dim); }
+
+  .doc {
+    align-self: start; margin-top: 6px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface);
+    font-family: "Geist Mono", monospace; overflow: hidden;
+  }
+  .doc header { display: flex; justify-content: space-between; align-items: baseline; padding: 18px 22px 16px; border-bottom: 1px solid var(--line); }
+  .doc header strong { font-weight: 600; font-size: 16px; }
+  .doc header small { font-size: 12.5px; color: var(--dim); }
+  .row { display: grid; grid-template-columns: 28px 1fr auto; align-items: baseline; gap: 10px; padding: 14px 22px; font-size: 15.5px; }
+  .row + .row { border-top: 1px solid oklch(0.30 0.016 150 / 0.55); }
+  .row .n { color: var(--dim); }
+  .row .t { color: var(--ink); font-family: "Geist", sans-serif; font-weight: 500; font-size: 17px; letter-spacing: -0.01em; }
+  .row .v { color: var(--dim); font-size: 13px; }
+  .row.hot { background: var(--signal-tint); }
+  .row.hot .n, .row.hot .t, .row.hot .v { color: var(--signal); }
+
+  /* The relay exchange zone: the stretch of track where the baton changes hands. */
+  .track { position: absolute; left: 72px; right: 72px; bottom: 30px; display: flex; align-items: center; gap: 16px;
+    font-family: "Geist Mono", monospace; font-size: 12.5px; color: var(--dim); }
+  .track .rail { flex: 1; height: 1px; background: var(--line); position: relative; }
+  .track .zone { position: absolute; left: 44%; width: 12%; top: -1px; height: 3px; background: var(--signal); border-radius: 2px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div>
+      <div class="mark"><b>/</b>handoff</div>
+      <h1>Stop mid-task.<br>Lose nothing.</h1>
+      <p class="sub">A Claude Code skill that finishes what's running, commits locally, and leaves one file the next session can trust.</p>
+      <div class="install"><span>$</span>/plugin marketplace add asalazarvaldiviaocg/handoff<span>$</span>/plugin install handoff@handoff</div>
+    </div>
+    <div class="doc">
+      <header><strong>HANDOFF.md</strong><small>linted · resumable</small></header>
+      <div class="row"><span class="n">1</span><span class="t">Goal</span><span class="v">your words, verbatim</span></div>
+      <div class="row"><span class="n">2</span><span class="t">Where everything ended</span><span class="v">a41d7e0 · 212/214</span></div>
+      <div class="row"><span class="n">3</span><span class="t">What changed</span><span class="v">file → commit</span></div>
+      <div class="row hot"><span class="n">4</span><span class="t">What we tried that failed</span><span class="v">don't repeat</span></div>
+      <div class="row"><span class="n">5</span><span class="t">Exact next steps</span><span class="v">commands, A/B</span></div>
+    </div>
+    <div class="track"><span>session ends</span><span class="rail"><span class="zone"></span></span><span>next session resumes</span></div>
+  </div>
+</body>
+</html>

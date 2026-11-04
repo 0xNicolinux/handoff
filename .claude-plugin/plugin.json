@@ -1,0 +1,22 @@
+{
+  "name": "handoff",
+  "version": "1.0.0",
+  "description": "Stop mid-task, lose nothing. /handoff lets running work finish, commits locally (pushes only if you ask), and writes one linted HANDOFF.md the next session can trust: goal, final state, what changed, what failed, exact next steps.",
+  "author": {
+    "name": "Alex S",
+    "url": "https://github.com/asalazarvaldiviaocg"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/asalazarvaldiviaocg/handoff",
+  "repository": "https://github.com/asalazarvaldiviaocg/handoff",
+  "keywords": [
+    "handoff",
+    "session-handoff",
+    "claude-code",
+    "agent-skills",
+    "context-engineering",
+    "usage-limit",
+    "git",
+    "productivity"
+  ]
+}

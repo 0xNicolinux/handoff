@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 316" width="960" height="316" role="img" aria-labelledby="t d">
+<title id="t">/handoff demo</title>
+<desc id="d">A terminal runs /handoff: it announces it is stopping, waits for a running review, checks repo state, makes a local WIP commit, writes and lints HANDOFF.md, and says nothing was pushed. Next morning, a fresh session shows the waiting handoff, checks the git state, reads what failed, and asks the first A/B question.</desc>
+<style>
+text{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;font-size:14.5px;white-space:pre}
+.a1,.a2{opacity:0}
+@keyframes l0{0%,1.500%{opacity:0;transform:translateY(3px)}2.600%,47.000%{opacity:1;transform:translateY(0)}48.750%,100%{opacity:0;transform:translateY(0)}}
+.l0{animation:l0 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes m0{0%,2.250%{transform:translateX(0);animation-timing-function:steps(8,end)}4.050%{transform:translateX(85.9px);opacity:1}4.300%,100%{transform:translateX(85.9px);opacity:0}}
+.m0{animation:m0 20s linear infinite}
+@keyframes l1{0%,6.500%{opacity:0;transform:translateY(3px)}7.600%,47.000%{opacity:1;transform:translateY(0)}48.750%,100%{opacity:0;transform:translateY(0)}}
+.l1{animation:l1 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l2{0%,12.500%{opacity:0;transform:translateY(3px)}13.600%,47.000%{opacity:1;transform:translateY(0)}48.750%,100%{opacity:0;transform:translateY(0)}}
+.l2{animation:l2 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l3{0%,17.000%{opacity:0;transform:translateY(3px)}18.100%,47.000%{opacity:1;transform:translateY(0)}48.750%,100%{opacity:0;transform:translateY(0)}}
+.l3{animation:l3 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l4{0%,21.500%{opacity:0;transform:translateY(3px)}22.600%,47.000%{opacity:1;transform:translateY(0)}48.750%,100%{opacity:0;transform:translateY(0)}}
+.l4{animation:l4 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l5{0%,26.000%{opacity:0;transform:translateY(3px)}27.100%,47.000%{opacity:1;transform:translateY(0)}48.750%,100%{opacity:0;transform:translateY(0)}}
+.l5{animation:l5 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l6{0%,32.000%{opacity:0;transform:translateY(3px)}33.100%,47.000%{opacity:1;transform:translateY(0)}48.750%,100%{opacity:0;transform:translateY(0)}}
+.l6{animation:l6 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l7{0%,49.500%{opacity:0;transform:translateY(3px)}50.600%,96.500%{opacity:1;transform:translateY(0)}98.250%,100%{opacity:0;transform:translateY(0)}}
+.l7{animation:l7 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l8{0%,52.000%{opacity:0;transform:translateY(3px)}53.100%,96.500%{opacity:1;transform:translateY(0)}98.250%,100%{opacity:0;transform:translateY(0)}}
+.l8{animation:l8 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes m8{0%,52.750%{transform:translateX(0);animation-timing-function:steps(6,end)}54.500%{transform:translateX(67.9px);opacity:1}54.750%,100%{transform:translateX(67.9px);opacity:0}}
+.m8{animation:m8 20s linear infinite}
+@keyframes l9{0%,56.500%{opacity:0;transform:translateY(3px)}57.600%,96.500%{opacity:1;transform:translateY(0)}98.250%,100%{opacity:0;transform:translateY(0)}}
+.l9{animation:l9 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l10{0%,61.000%{opacity:0;transform:translateY(3px)}62.100%,96.500%{opacity:1;transform:translateY(0)}98.250%,100%{opacity:0;transform:translateY(0)}}
+.l10{animation:l10 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes m10{0%,61.750%{transform:translateX(0);animation-timing-function:steps(24,end)}67.150%{transform:translateX(229.8px);opacity:1}67.400%,100%{transform:translateX(229.8px);opacity:0}}
+.m10{animation:m10 20s linear infinite}
+@keyframes l11{0%,69.500%{opacity:0;transform:translateY(3px)}70.600%,96.500%{opacity:1;transform:translateY(0)}98.250%,100%{opacity:0;transform:translateY(0)}}
+.l11{animation:l11 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l12{0%,74.000%{opacity:0;transform:translateY(3px)}75.100%,96.500%{opacity:1;transform:translateY(0)}98.250%,100%{opacity:0;transform:translateY(0)}}
+.l12{animation:l12 20s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes l13{0%,79.000%{opacity:0;transform:translateY(3px)}80.100%,96.500%{opacity:1;transform:translateY(0)}98.250%,100%{opacity:0;transform:translateY(0)}}
+.l13{animation:l13 20s cubic-bezier(.23,1,.32,1) infinite}
+@media (prefers-reduced-motion:reduce){.a1{animation:none!important;opacity:1;transform:none}.a2{display:none}.mask{display:none}}
+</style>
+<rect x="0.5" y="0.5" width="959" height="315" rx="16" fill="#131914" stroke="#28302a"/>
+<path d="M16.5 0.5H943.5A16 16 0 0 1 959.5 16.5V44.5H0.5V16.5A16 16 0 0 1 16.5 0.5Z" fill="#0b100c"/>
+<line x1="0.5" y1="44.5" x2="959.5" y2="44.5" stroke="#28302a"/>
+<circle cx="24" cy="22.5" r="5.5" fill="#28302a"/><circle cx="43" cy="22.5" r="5.5" fill="#28302a"/><circle cx="62" cy="22.5" r="5.5" fill="#28302a"/>
+<text x="480" y="27" text-anchor="middle" fill="#6f7770" style="font-size:13px">claude · ~/code/ledgerline</text>
+  <g class="a1 l0"><text x="34" y="92" xml:space="preserve"><tspan fill="#6f7770">&gt; </tspan><tspan fill="#edf2ed">/handoff</tspan></text><rect class="mask m0" x="50.0" y="77" width="86" height="23" fill="#131914"/></g>
+  <g class="a1 l1"><text x="34" y="119" xml:space="preserve"><tspan fill="#edf2ed">Stopping with /handoff. Running: review round 2 (~3 min). Starting nothing new.</tspan></text></g>
+  <g class="a1 l2"><text x="34" y="146" xml:space="preserve"><tspan fill="#65e287">  ✓ </tspan><tspan fill="#edf2ed">waited for the review    </tspan><tspan fill="#6f7770">4 findings tabulated, 0 fixed</tspan></text></g>
+  <g class="a1 l3"><text x="34" y="173" xml:space="preserve"><tspan fill="#65e287">  ✓ </tspan><tspan fill="#edf2ed">repo-state               </tspan><tspan fill="#6f7770">fix/webhook-idempotency @ 9f3c2a1 · no secrets</tspan></text></g>
+  <g class="a1 l4"><text x="34" y="200" xml:space="preserve"><tspan fill="#65e287">  ✓ </tspan><tspan fill="#edf2ed">local commit             </tspan><tspan fill="#6f7770">a41d7e0  WIP: e2e isolation per worker</tspan></text></g>
+  <g class="a1 l5"><text x="34" y="227" xml:space="preserve"><tspan fill="#65e287">  ✓ </tspan><tspan fill="#edf2ed">HANDOFF.md               </tspan><tspan fill="#6f7770">5 sections · check-handoff: OK</tspan></text></g>
+  <g class="a1 l6"><text x="34" y="254" xml:space="preserve"><tspan fill="#a5ada6">Nothing pushed or deployed. Next session, say: </tspan><tspan fill="#65e287">continue from HANDOFF.md</tspan></text></g>
+  <g class="a2 l7"><line x1="34" y1="87" x2="350" y2="87" stroke="#28302a"/><text x="480" y="92" text-anchor="middle"><tspan fill="#6f7770">next morning, fresh session</tspan></text><line x1="610" y1="87" x2="926" y2="87" stroke="#28302a"/></g>
+  <g class="a2 l8"><text x="34" y="119" xml:space="preserve"><tspan fill="#6f7770">$ </tspan><tspan fill="#edf2ed">claude</tspan></text><rect class="mask m8" x="50.0" y="104" width="68" height="23" fill="#131914"/></g>
+  <g class="a2 l9"><text x="34" y="146" xml:space="preserve"><tspan fill="#a5ada6">  Handoff waiting: ledgerline: idempotent payment webhook (STOPPED AT USAGE LIMIT, 9 h ago)</tspan></text></g>
+  <g class="a2 l10"><text x="34" y="173" xml:space="preserve"><tspan fill="#6f7770">&gt; </tspan><tspan fill="#edf2ed">continue from HANDOFF.md</tspan></text><rect class="mask m10" x="50.0" y="158" width="230" height="23" fill="#131914"/></g>
+  <g class="a2 l11"><text x="34" y="200" xml:space="preserve"><tspan fill="#65e287">  ✓ </tspan><tspan fill="#edf2ed">HEAD a41d7e0 matches section 2 · tree clean</tspan></text></g>
+  <g class="a2 l12"><text x="34" y="227" xml:space="preserve"><tspan fill="#65e287">  ✓ </tspan><tspan fill="#edf2ed">read section 4: retry only 429/5xx; the limit is 60 s, not 10 s</tspan></text></g>
+  <g class="a2 l13"><text x="34" y="254" xml:space="preserve"><tspan fill="#65e287">  → </tspan><tspan fill="#edf2ed">step 1 of 5: fix F1 and F2 now, or log them as known issues? (A/B)</tspan></text></g>
+</svg>

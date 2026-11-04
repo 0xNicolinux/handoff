@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "handoff",
+  "description": "Session handoffs for coding agents that survive usage limits, crashes and machine switches.",
+  "owner": {
+    "name": "Alex S",
+    "url": "https://github.com/asalazarvaldiviaocg"
+  },
+  "plugins": [
+    {
+      "name": "handoff",
+      "description": "Finish what's running, commit locally, write one HANDOFF.md the next session can trust. Then stop.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
