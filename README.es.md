@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> · <b>Español</b>
+  <a href="README.md">English</a> · <b>Español</b> · <a href="README.pt-BR.md">Português (Brasil)</a>
 </p>
 
 **`/handoff` es un skill de Claude Code para cuando una sesión tiene que terminar a media tarea.** Deja que termine lo que ya estaba corriendo, hace commit local y escribe un solo `HANDOFF.md` desde el que una sesión sin contexto puede retomar sin adivinar. Y luego se detiene. Funciona en cualquier agente que lea `SKILL.md`.

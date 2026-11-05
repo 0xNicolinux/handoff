@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <b>English</b> · <a href="README.es.md">Español</a>
+  <b>English</b> · <a href="README.es.md">Español</a> · <a href="README.pt-BR.md">Português (Brasil)</a>
 </p>
 
 **`/handoff` is a Claude Code skill for when a session has to end mid-task.** It lets the work already running finish, commits locally, and writes one `HANDOFF.md` that a cold session can resume from without guessing. Then it stops. It runs in any agent that reads `SKILL.md`.
